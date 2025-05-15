@@ -8,6 +8,12 @@
       "developmentClient": true,
       "distribution": "internal"
     },
+    "ios-simulator": {
+      "extends": "development",
+      "ios": {
+        "simulator": true
+      }
+    },
     "preview": {
       "android": {
         "buildType": "apk"
@@ -15,6 +21,9 @@
       "distribution": "internal"
     },
     "production": {
+      "android": {
+        "buildType": "apk"
+      },
       "autoIncrement": true
     }
   },
